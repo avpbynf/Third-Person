@@ -165,7 +165,7 @@ public final class ThirdPersonEvents {
       }
       var minecraft = Minecraft.getInstance();
       minecraft.gameRenderer.checkEntityPostEffect(minecraft.getCameraEntity());
-      minecraft.levelExtractor.allChanged();
+      minecraft.levelRenderer.allChanged();
 
       ThirdPersonStatus.wasRenderInThirdPersonLastRenderTick = isRenderingInThirdPerson;
     }

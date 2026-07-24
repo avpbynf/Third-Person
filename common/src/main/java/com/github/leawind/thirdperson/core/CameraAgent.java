@@ -275,7 +275,7 @@ public class CameraAgent {
 
   /** 获取原版相机对象 */
   public @NotNull Camera getRawCamera() {
-    return Objects.requireNonNull(Minecraft.getInstance().gameRenderer.mainCamera());
+    return Objects.requireNonNull(Minecraft.getInstance().gameRenderer.getMainCamera());
   }
 
   /** 获取原始相机位置 */

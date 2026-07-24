@@ -9,7 +9,7 @@
     "ClientLevelInvoker",
     "CameraMixin",
     "CameraTypeMixin",
-    "LevelExtractorMixin",
+    "LevelRendererMixin",
     "LocalPlayerMixin",
     "ModelPartCubeMixin",
     "RenderTypesMixin",

@@ -2,12 +2,12 @@ package com.github.leawind.thirdperson.mixin;
 
 import com.github.leawind.thirdperson.ThirdPersonStatus;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
-import net.minecraft.client.gui.Hud;
+import net.minecraft.client.gui.Gui;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 
 @SuppressWarnings("unused")
-@Mixin(value = Hud.class, priority = 2000)
+@Mixin(value = Gui.class, priority = 2000)
 public class GuiMixin {
   @ModifyExpressionValue(
       method = "extractCrosshair",

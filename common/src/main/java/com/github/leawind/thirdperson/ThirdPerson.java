@@ -47,7 +47,7 @@ public final class ThirdPerson {
         && minecraft.player != null
         && minecraft.getCameraEntity() != null
         && getConfig().is_mod_enabled
-        && minecraft.gameRenderer.mainCamera().isInitialized();
+        && minecraft.gameRenderer.getMainCamera().isInitialized();
   }
 
   /** 获取当前配置实例 */
