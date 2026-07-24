@@ -15,18 +15,17 @@ A practical, smooth, feature-rich third person mod for all Minecraft players.
 
 </div>
 
-## Minecraft 26.2 port
+## Minecraft 26.1 port
 
-This branch is an unofficial port of Leawind's Third Person 2.5.0 from Minecraft 1.21.11 to Minecraft 26.2, for both NeoForge and Fabric. All credit for the mod itself (features, design and assets) goes to [Leawind](https://github.com/Leawind) and the upstream contributors. Only the build toolchain and the hooks into the game changed.
+This branch is an unofficial port of Leawind's Third Person 2.5.0 from Minecraft 1.21.11 to Minecraft 26.1, for both NeoForge and Fabric. All credit for the mod itself (features, design and assets) goes to [Leawind](https://github.com/Leawind) and the upstream contributors. Only the build toolchain and the hooks into the game changed.
 
 What changed compared to 1.21.11:
 
 - Build toolchain updated to Architectury Loom 1.17 (no-remap), Gradle 9.5 and Java 25. Minecraft 26.x ships de-obfuscated, so the Parchment mappings and the remap step are gone.
 - The camera hook moved from `Camera#setup` to `Camera#alignWithEntity` and the FOV hook from `GameRenderer#getFov` to `Camera#calculateFov`, following the vanilla refactor.
-- The crosshair hook follows the HUD split from `Gui` into the new `Hud` class.
-- Entity visibility filtering follows `extractVisibleEntities` from `LevelRenderer` to the new `LevelExtractor`.
+- The crosshair hook and the entity visibility filtering still sit on `Gui#extractCrosshair` and `LevelRenderer#extractVisibleEntities`, which were only split out into `Hud` and `LevelExtractor` in 26.2.
 - Player transparency now relies on the per-entity alpha path only, since the buffer flush it used was removed along with the immediate-mode pipeline. Armor translucency uses the vanilla `armorTranslucent` render type.
-- Dependencies bumped for 26.2: Architectury API 21.0.4, Cloth Config 26.2.155, YACL 3.9.6, Mod Menu 20.0.1, MixinExtras 0.5.4.
+- Dependencies bumped for 26.1: Architectury API 20.0.9, Cloth Config 26.1.154, YACL 3.9.6, Mod Menu 18.0.0, MixinExtras 0.5.4.
 
 To play, install [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api) for your loader (required), plus [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config) or [YACL](https://modrinth.com/mod/yacl) if you want the in-game config screen (optional).
 
