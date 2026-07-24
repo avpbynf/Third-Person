@@ -15,7 +15,7 @@ displayURL = "${mod_url_home}"
 [[dependencies.leawind_third_person]]
 modId = "neoforge"
 type = "required"
-versionRange = "[26.2,)"
+versionRange = "[26.1,26.2)"
 ordering = "NONE"
 side = "CLIENT"
 
