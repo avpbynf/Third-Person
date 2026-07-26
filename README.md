@@ -17,6 +17,8 @@ A practical, smooth, feature-rich third person mod for all Minecraft players.
 
 ## Minecraft 26.2 port
 
+> **This port now lives upstream.** It was merged as [Leawind/Third-Person#250](https://github.com/Leawind/Third-Person/pull/250) and now sits on the upstream `26.2` branch. Once the upstream 26.2 release is out, install the mod from [CurseForge](https://www.curseforge.com/minecraft/mc-mods/leawind-third-person) or [Modrinth](https://modrinth.com/mod/leawind-third-person) rather than from this fork. What follows is kept for reference.
+
 This branch is an unofficial port of Leawind's Third Person 2.5.0 from Minecraft 1.21.11 to Minecraft 26.2, for both NeoForge and Fabric. All credit for the mod itself (features, design and assets) goes to [Leawind](https://github.com/Leawind) and the upstream contributors. Only the build toolchain and the hooks into the game changed.
 
 What changed compared to 1.21.11:
@@ -30,7 +32,7 @@ What changed compared to 1.21.11:
 
 To play, install [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api) for your loader (required), plus [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config) or [YACL](https://modrinth.com/mod/yacl) if you want the in-game config screen (optional).
 
-Issues specific to this port belong on this repository's issue tracker. Anything about the mod's features themselves is best reported [upstream](https://github.com/Leawind/Third-Person/issues).
+Now that the port is upstream, everything belongs on the [upstream issue tracker](https://github.com/Leawind/Third-Person/issues), the port included.
 
 - **Client Side Only** No need to install on server. So you can join servers with this mod.
 - **Free Rotation** Freely rotate the view while keeping the player's body stationary.
